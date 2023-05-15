@@ -1,0 +1,1 @@
+<script src="/public/scripts/script.js"></script>
