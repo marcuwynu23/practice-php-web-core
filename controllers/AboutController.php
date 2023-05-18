@@ -1,10 +1,11 @@
 <?php
 
 
-class AboutController
+require_once __DIR__ . "/../lib/libs.php";
+class AboutController extends Controller
 {
 	function index()
 	{
-		require __DIR__ . "/../views/about.php";
+		$this->view('about.view', []);
 	}
 }

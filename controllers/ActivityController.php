@@ -1,9 +1,11 @@
 <?php
+require_once __DIR__ . "/../lib/libs.php";
 
-class ActivityController
+
+class ActivityController extends Controller
 {
 	function index()
 	{
-		require_once  __DIR__  . "/../views/activity/activity.php";
+		$this->view("activity.view", []);
 	}
 }

@@ -1,9 +1,13 @@
 <?php
 
-class ContactController
+require_once __DIR__ . "/../lib/libs.php";
+
+
+
+class ContactController extends Controller
 {
 	function index()
 	{
-		require __DIR__ . "/../views/contact.php";
+		$this->view("contact.view", []);
 	}
 }
